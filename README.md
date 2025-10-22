@@ -6,20 +6,20 @@
 
 > Tiny yet powerful utilities to manipulate strings your way.
 
-`string-it` is a lightweight JavaScript library that provides simple, chainable string manipulation utilities — perfect for cleaning and formatting text easily.
+`string-pro` is a lightweight JavaScript library that provides simple, chainable string manipulation utilities — perfect for cleaning and formatting text easily.
 
 ---
 
 ## Installation
 
 ```bash
-npm install string-it
+npm install string-pro
 ```
 
 or
 
 ```bash
-yarn add string-it
+yarn add string-pro
 ```
 
 ---
@@ -29,7 +29,7 @@ yarn add string-it
 ### Import as individual functions
 
 ```js
-import { trimAll, normalizeSpaces } from 'string-it';
+import { trimAll, normalizeSpaces } from 'string-pro';
 
 console.log(trimAll('   Hello   world   '));
 // → "Hello world"
@@ -44,7 +44,7 @@ again`));
 ### Or use the chainable API
 
 ```js
-import S from 'string-it';
+import S from 'string-pro';
 
 const result = S(`   Hello		world
 
