@@ -31,8 +31,8 @@ jobs:
         run: npm ci
 
       # Step 4: Build the package
-      - name: Build package
-        run: npm run build
+      #- name: Build package
+       # run: npm run build
 
       # Step 5: Publish to npm
       - name: Publish package to npm
