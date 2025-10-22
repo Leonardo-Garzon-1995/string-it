@@ -1,0 +1,47 @@
+name: Publish npm package on tag
+
+# Trigger workflow only when a tag matching v* is pushed
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      # Step 1: Checkout code
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # necessary to access all tags
+
+      # Step 2: Setup Node.js
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          registry-url: 'https://registry.npmjs.org/'
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: npm ci
+
+      # Step 4: Build the package
+      - name: Build package
+        run: npm run build
+
+      # Step 5: Publish to npm
+      - name: Publish package to npm
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          # If scoped package, ensure public access
+          if grep -q '"name": "@' package.json; then
+            npm publish --access public
+          else
+            npm publish
+          fi

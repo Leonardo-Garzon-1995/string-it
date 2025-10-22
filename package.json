@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Leonardo-Garzon-1995/string-it.git"
+    "url": "git+https://github.com/Leonardo-Garzon-1995/string-pro.git"
   },
   "keywords": [
     "string",
@@ -19,7 +19,7 @@
   "author": "Leonardo Garzon <lgarzonlc@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Leonardo-Garzon-1995/string-it/issues"
+    "url": "https://github.com/Leonardo-Garzon-1995/string-pro/issues"
   },
-  "homepage": "https://github.com/Leonardo-Garzon-1995/string-it#readme"
+  "homepage": "https://github.com/Leonardo-Garzon-1995/string-pro#readme"
 }
