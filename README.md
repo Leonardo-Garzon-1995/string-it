@@ -46,7 +46,10 @@ import S from 'string-pro';
 
 const result = S(`   Hello		world
 
-again   `).trimAll().normalizeSpaces().value();
+again   `)
+  .trimAll()
+  .normalizeSpaces()
+  .value();
 
 console.log(result);
 // → "Hello world again"
