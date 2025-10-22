@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="string_it_logo.svg" alt="string-it Logo" width="400"/>
+  <img src="string_it_logo.svg" alt="string-pro Logo" width="400"/>
 </div>
 
 
