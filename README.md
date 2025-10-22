@@ -1,5 +1,7 @@
 
-# 🧵 string-it
+
+
+# string-it
 
 > Tiny yet powerful utilities to manipulate strings your way.
 
@@ -7,7 +9,7 @@
 
 ---
 
-## 🚀 Installation
+## Installation
 
 ```bash
 npm install string-it
@@ -21,7 +23,7 @@ yarn add string-it
 
 ---
 
-## 🧠 Usage
+## Usage
 
 ### Import as individual functions
 
@@ -31,10 +33,11 @@ import { trimAll, normalizeSpaces } from 'string-it';
 console.log(trimAll('   Hello   world   '));
 // → "Hello world"
 
-console.log(normalizeSpaces('Hello		world
-
-again'));
-// → "Hello world again"
+console.log(normalizeSpaces(`
+Hello		world  
+again and
+again`));
+// → "Hello world again and again"
 ```
 
 ### Or use the chainable API
@@ -42,9 +45,9 @@ again'));
 ```js
 import S from 'string-it';
 
-const result = S('   Hello		world
+const result = S(`   Hello		world
 
-again   ')
+again   `)
   .trimAll()
   .normalizeSpaces()
   .value();
@@ -55,7 +58,7 @@ console.log(result);
 
 ---
 
-## ✨ Available utilities
+## Available utilities
 | Function | Description |
 |-----------|-------------|
 | `trimAll(str)` | Removes extra spaces (leading, trailing, and multiple between words). |
@@ -63,20 +66,12 @@ console.log(result);
 
 ---
 
-## 🧩 Coming soon
-- `toTitleCase(str)`
-- `reverse(str)`
-- `countWords(str)`
-- Chainable `.toTitleCase()` and `.reverse()` support.
-
----
-
-## 🧑‍💻 Author
+## Author
 **Leonardo Garzon**  
-📧 [lgarzonlc@gmail.com](mailto:lgarzonlc@gmail.com)  
-🔗 [GitHub](https://github.com/Leonardo-Garzon-1995/string-it)
+[lgarzonlc@gmail.com](mailto:lgarzonlc@gmail.com)  
+[GitHub](https://github.com/Leonardo-Garzon-1995/string-it)
 
 ---
 
-## 📜 License
+##  License
 MIT © Leonardo Garzon

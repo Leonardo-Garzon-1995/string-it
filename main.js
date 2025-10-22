@@ -15,7 +15,13 @@ import slugify from "./src/slugify.js";
 import stripHtml from "./src/stripHtml.js";
 
 // Formatting helpers
+import camelCase from "./src/camelCase.js";
+import snakeCase from "./src/snakeCase.js";
+import kebabCase from "./src/kebabCase.js";
+import pascalCase from "./src/pascalCase.js";
+import truncate from "./src/truncate.js";
 
+// 
 
 export {
     capitalizeFirst,
@@ -29,7 +35,12 @@ export {
     keepOnlyLetters,
     normalizeSpaces,
     slugify,
-    stripHtml
+    stripHtml,
+    camelCase,
+    snakeCase,
+    kebabCase,
+    pascalCase,
+    truncate
 };
 
 
