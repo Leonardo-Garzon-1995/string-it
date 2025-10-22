@@ -11,6 +11,10 @@ import removeSpecialChars from "./src/removeSpecialChars.js";
 import keepOnlyNumbers from "./src/keepOnlyNumbers.js";
 import keepOnlyLetters from "./src/keepOnlyLetters.js";
 import normalizeSpaces from "./src/normalizeSpaces.js";
+import slugify from "./src/slugify.js";
+import stripHtml from "./src/stripHtml.js";
+
+// Formatting helpers
 
 
 export {
@@ -23,7 +27,9 @@ export {
     removeSpecialChars,
     keepOnlyNumbers,
     keepOnlyLetters,
-    normalizeSpaces
+    normalizeSpaces,
+    slugify,
+    stripHtml
 };
 
 
