@@ -1,0 +1,25 @@
+{
+  "name": "string-it",
+  "version": "0.1.0",
+  "description": "Tiny yet powerful utilities to manipulate strings your way.",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leonardo-Garzon-1995/string-it.git"
+  },
+  "keywords": [
+    "string",
+    "manipulation"
+  ],
+  "author": "Leonardo Garzon <lgarzonlc@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Leonardo-Garzon-1995/string-it/issues"
+  },
+  "homepage": "https://github.com/Leonardo-Garzon-1995/string-it#readme"
+}

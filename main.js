@@ -1,10 +1,29 @@
+// Basic utilities
+import capitalizeFirst from "./src/capitalizeFirst.js";
+import toTitleCase from "./src/toTitleCase.js";
+import reverseStr from "./src/reverseStr.js";
+import trimAll from "./src/trimAll.js";
+import isPalindrome from "./src/isPalindrome.js";
+import countWords from "./src/countWords.js";
 
-function capitalizeFirst(str) {
-    return str.charAt(0).toUpperCase() + str.slice(1);
-}
+// Cleaning and normalizing strings
+import removeSpecialChars from "./src/removeSpecialChars.js";
+import keepOnlyNumbers from "./src/keepOnlyNumbers.js";
+import keepOnlyLetters from "./src/keepOnlyLetters.js";
+import normalizeSpaces from "./src/normalizeSpaces.js";
 
-function capitalizeFirstAll(str) {
-    return str.split(' ').map(capitalizeFirst).join(' ');
-}
 
-console.log(capitalizeFirst("hello world"), capitalizeFirstAll("hello world and you"));
+export {
+    capitalizeFirst,
+    toTitleCase,
+    reverseStr,
+    trimAll,
+    isPalindrome,
+    countWords,
+    removeSpecialChars,
+    keepOnlyNumbers,
+    keepOnlyLetters,
+    normalizeSpaces
+};
+
+
