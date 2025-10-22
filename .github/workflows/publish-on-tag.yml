@@ -30,6 +30,7 @@ jobs:
       - name: Authenticate with npm
         run: |
             echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+            npm whoami || echo "Authentication failed"
 
 
       # Step 3: Install dependencies
