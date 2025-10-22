@@ -70,7 +70,7 @@ console.log(result);
 ## Author
 **Leonardo Garzon**  
 [lgarzonlc@gmail.com](mailto:lgarzonlc@gmail.com)  
-[GitHub](https://github.com/Leonardo-Garzon-1995/string-it)
+[GitHub](https://github.com/Leonardo-Garzon-1995/string-pro)
 
 ---
 
