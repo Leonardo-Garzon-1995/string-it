@@ -1,7 +1,8 @@
+<div align="center">
+  <img src="string_it_logo.svg" alt="string-it Logo" width="400"/>
+</div>
 
 
-
-# string-it
 
 > Tiny yet powerful utilities to manipulate strings your way.
 
