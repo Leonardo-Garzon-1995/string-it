@@ -2,8 +2,6 @@
   <img src="string_it_logo.svg" alt="string-pro Logo" width="400"/>
 </div>
 
-
-
 > Tiny yet powerful utilities to manipulate strings your way.
 
 `string-pro` is a lightweight JavaScript library that provides simple, chainable string manipulation utilities — perfect for cleaning and formatting text easily.
