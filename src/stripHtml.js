@@ -9,7 +9,9 @@
  * @returns {string} The string with all HTML tags removed.
  */
 function stripHtml(str) {
-    if (typeof str !== "string") return "";
+    if (typeof str !== "string") {
+        throw new TypeError("stripHtml() expects a string as its argument")
+    };
     
     const htmlTagRegex = /<[^>]+>/g;
     return str.replace(htmlTagRegex, '');

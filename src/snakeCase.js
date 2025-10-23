@@ -9,7 +9,7 @@
  */
 function snakeCase(str) {
     if (typeof str !== "string") {
-        throw new TypeError("snakeCase() expects a string as its argument");
+        throw  new TypeError("snakeCase() expects a string as its argument");
     }
 
     try {

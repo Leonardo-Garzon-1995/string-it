@@ -10,6 +10,9 @@
  * @returns {string} The title case string.
  */
 function toTitleCase(str) {
+    if (typeof str !== "string") {
+        throw new TypeError("toTitleCase() expects a string as its argument")
+    }
     return str.replace(/\w\S*/g, function (txt) {
         // Capitalize the first character, and lowercase the rest
         return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();

@@ -1,5 +1,12 @@
+/**
+ *  Converts a string to PascalCase.
+ * @param {string} str The string to convert
+ * @returns {string} The PascalCase string
+ */
 function pascalCase(str) {
-    if (typeof str !== 'string') return '';
+    if (typeof str !== 'string') {
+        throw new TypeError('pascalCase() expects a string as its argument');
+    };
 
     // Trim whitespace
     str = str.trim();

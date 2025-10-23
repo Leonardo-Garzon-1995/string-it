@@ -60,9 +60,26 @@ console.log(result);
 ## Available utilities
 | Function | Description |
 |-----------|-------------|
-| `trimAll(str)` | Removes extra spaces (leading, trailing, and multiple between words). |
+| BASIC UTILITIES |
+|`trimAll(str)` | Removes extra spaces (leading, trailing, and multiple between words). |
+|`capitalizefirst(str)` | Capitalizes the first letter of a string. |
+| `toTitleCase(str)` | Converts a string to title case. |
+| `reverse(str)` | Reverses a string. |
+| `isPalindrom(str)` | Checks if a string is a palindrome. |
+| `countWords(str)` | Counts the number of words in a string. |
+| CLEANING UTILITIES |  
+| `removeSpecialChars(str)` | Removes special characters from a string. |
+| `stripHtml(str)` | Removes all HTML tags from a string. |
+| `slugify(str)` | Converts a string to a slug. |
+| `keepOnlyLetters(str)` | Removes all non-letter characters from a string. |
+| `keepOnlyNumbers(str)` | Removes all non-number characters from a string. |
 | `normalizeSpaces(str)` | Replaces multiple spaces, tabs, or newlines with a single space. |
-
+| FORMATTING UTILITIES |
+| `camelCase(str)` | Converts a string to camelCase. |
+| `pascalCase(str)` | Converts a string to PascalCase. |
+| `snakeCase(str)` | Converts a string to snake_case. |
+| `kebabCase(str)` | Converts a string to kebab-case. |
+| `truncate(str, length)` | Truncates a string to a specified length. |
 ---
 
 ## Author

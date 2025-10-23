@@ -9,8 +9,12 @@
  * @returns {string} Truncated string
  */
 function truncate(str, length, options = {}) {
-    if (typeof str !== 'string') return '';
-    if (typeof length !== 'number' || length <= 0) return '';
+    if (typeof str !== 'string') {
+        throw new TypeError('truncate() expects a string as its first argument');
+    };
+    if (typeof length !== 'number' || length <= 0) {
+        throw new TypeError('truncate() expects a positive number as its second argument');
+    };
 
     const { wordBoundary = false, ellipsis = '…' } = options;
 
