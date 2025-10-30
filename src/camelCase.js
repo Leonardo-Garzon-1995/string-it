@@ -8,9 +8,8 @@
  * @returns {string} The camelCase formatted string.
  */
 function camelCase(str) {
-    if (typeof str !== "string") {
-        throw new TypeError("camelCase() expects a string as its argument")
-    }
+    if (typeof str !== "string") return "";
+    
     const upperCaseWord = (word, index) => {
         return index === 0 ? word.toLowerCase() : word.toUpperCase();
     };
