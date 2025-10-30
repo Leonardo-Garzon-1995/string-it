@@ -21,7 +21,7 @@ import kebabCase from "./src/kebabCase.js";
 import pascalCase from "./src/pascalCase.js";
 import truncate from "./src/truncate.js";
 
-// More features
+// More New features
 
 export {
     capitalizeFirst,
