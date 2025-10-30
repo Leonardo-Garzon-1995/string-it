@@ -1,6 +1,6 @@
 {
   "name": "string-pro",
-  "version": "0.7.1-beta.0",
+  "version": "0.7.2-beta.0",
   "description": "Tiny yet powerful utilities to manipulate strings your way.",
   "main": "main.js",
   "type": "module",
