@@ -1,27 +1,27 @@
 // chaining 'methods' to S(tring) objects
 
 // Basic utilities
-import capitalizeFirst from "./src/capitalizeFirst.js";
-import toTitleCase from "./src/toTitleCase.js";
-import reverseStr from "./src/reverseStr.js";
-import trimAll from "./src/trimAll.js";
-import isPalindrome from "./src/isPalindrome.js";
-import countWords from "./src/countWords.js";
+import capitalizeFirst from "./capitalizeFirst.js";
+import toTitleCase from "./toTitleCase.js";
+import reverseStr from "./reverseStr.js";
+import trimAll from "./trimAll.js";
+import isPalindrome from "./isPalindrome.js";
+import countWords from "./countWords.js";
 
 // Cleaning and normalizing strings
-import removeSpecialChars from "./src/removeSpecialChars.js";
-import keepOnlyNumbers from "./src/keepOnlyNumbers.js";
-import keepOnlyLetters from "./src/keepOnlyLetters.js";
-import normalizeSpaces from "./src/normalizeSpaces.js";
-import slugify from "./src/slugify.js";
-import stripHtml from "./src/stripHtml.js";
+import removeSpecialChars from "./removeSpecialChars.js";
+import keepOnlyNumbers from "./keepOnlyNumbers.js";
+import keepOnlyLetters from "./keepOnlyLetters.js";
+import normalizeSpaces from "./normalizeSpaces.js";
+import slugify from "./slugify.js";
+import stripHtml from "./stripHtml.js";
 
 // Formatting helpers
-import camelCase from "./src/camelCase.js";
-import snakeCase from "./src/snakeCase.js";
-import kebabCase from "./src/kebabCase.js";
-import pascalCase from "./src/pascalCase.js";
-import truncate from "./src/truncate.js";
+import camelCase from "./camelCase.js";
+import snakeCase from "./snakeCase.js";
+import kebabCase from "./kebabCase.js";
+import pascalCase from "./pascalCase.js";
+import truncate from "./truncate.js";
 
 // More New features
 

@@ -64,7 +64,7 @@ console.log(result);
 |`trimAll(str)` | Removes extra spaces (leading, trailing, and multiple between words). |
 |`capitalizefirst(str)` | Capitalizes the first letter of a string. |
 | `toTitleCase(str)` | Converts a string to title case. |
-| `reverse(str)` | Reverses a string. |
+| `reverseStr(str)` | Reverses a string. |
 | `isPalindrom(str)` | Checks if a string is a palindrome. |
 | `countWords(str)` | Counts the number of words in a string. |
 | CLEANING UTILITIES |  
@@ -81,6 +81,10 @@ console.log(result);
 | `kebabCase(str)` | Converts a string to kebab-case. |
 | `truncate(str, length)` | Truncates a string to a specified length. |
 ---
+
+## Contributing
+
+Want to contribute? Check out our [CONTRIBUTE](CONTRIBUTE.md) file for instructions on how to get started. Help us make **string-pro** even better!
 
 ## Author
 **Leonardo Garzon**  
