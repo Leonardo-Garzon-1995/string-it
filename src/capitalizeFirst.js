@@ -5,9 +5,7 @@
  * @returns {string} The capitalized string.
  */
 function capitalizeFirst(str) {
-    if (typeof str !== "string") {
-        throw new TypeError("capitalizeFirst() expects a string as its argument");
-    }
+    if (typeof str !== "string") return "";
     
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
