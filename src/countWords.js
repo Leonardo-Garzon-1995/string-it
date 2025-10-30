@@ -5,7 +5,9 @@
  * @returns {number} The number of words in the string
  */
 function countWords(str) {
-    if (typeof str !== "string") return "";
+    if (typeof str !== "string") {
+        throw new TypeError("countWords() expects a string as its argument");
+    };
     
     return str.split(" ").length;
 }

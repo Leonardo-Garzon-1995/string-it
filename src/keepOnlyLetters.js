@@ -5,7 +5,9 @@
  * @returns {string} The string with only letters
  */
 function keepOnlyLetters(str) {
-    if (typeof str !== "string") return "";
+    if (typeof str !== "string") {
+        throw new TypeError("keepOnlyLetters() expects a string as its argument");
+    };
     
     return str.replace(/[^a-zA-Z]/g, "");
 }

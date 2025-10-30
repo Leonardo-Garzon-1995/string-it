@@ -5,7 +5,9 @@
  * @returns {string} The string with only numbers
  */
 function keepOnlyNumbers(str) {
-    if (typeof str !== "string") return "";
+    if (typeof str !== "string") {
+        throw new TypeError("keepOnlyNumbers() expects a string as its argument");
+    };
     
     return str.replace(/[^0-9]/g, "");
 }

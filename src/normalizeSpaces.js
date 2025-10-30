@@ -11,7 +11,9 @@
  */
 function normalizeSpaces(str) {
     // Check if the argument is a string
-    if (typeof str !== "string") return "";
+    if (typeof str !== "string") {
+        throw new TypeError("normalizeSpaces() expects a string as its argument");
+    };
 
     return str.replace(/\s+/g, " ");
 }

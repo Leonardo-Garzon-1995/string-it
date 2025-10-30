@@ -5,7 +5,9 @@
  * @returns {string} The kebab-case string
  */
 function kebabCase(str) {
-    if (typeof str !== 'string') return "";
+    if (typeof str !== 'string') {
+        throw new TypeError('kebabCase() expects a string as its argument');
+    };
 
     //  Trim whitespace
     str = str.trim();

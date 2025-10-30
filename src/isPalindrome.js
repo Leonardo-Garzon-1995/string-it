@@ -6,7 +6,9 @@ import reverseStr from "./reverseStr.js";
  * @returns {boolean} True if the string is a palindrome, false otherwise.
  */
 function isPalindrome(str) {
-    if (typeof str !== "string") return "";
+    if (typeof str !== "string") {
+        throw new TypeError("isPalindrome() expects a string as its argument");
+    };
     
     return str === reverseStr(str);
 }

@@ -12,7 +12,6 @@ function snakeCase(str) {
         throw  new TypeError("snakeCase() expects a string as its argument");
     }
 
-    try {
         // Trim whitespace
         str = str.trim();
 
@@ -32,10 +31,6 @@ function snakeCase(str) {
         // Convert to lowercase
         return str.toLowerCase();
         
-    } catch (error) {
-        console.error("An error occurred in snakeCase():", error);
-        return "";
-    }
 }
 
 export default snakeCase

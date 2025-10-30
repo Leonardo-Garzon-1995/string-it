@@ -1,3 +1,5 @@
+// chaining 'methods' to S(tring) objects
+
 // Basic utilities
 import capitalizeFirst from "./src/capitalizeFirst.js";
 import toTitleCase from "./src/toTitleCase.js";
@@ -23,7 +25,7 @@ import truncate from "./src/truncate.js";
 
 // More New features
 
-export {
+const METHODS = {
     capitalizeFirst,
     toTitleCase,
     reverseStr,
@@ -40,10 +42,34 @@ export {
     snakeCase,
     kebabCase,
     pascalCase,
-    truncate
+    truncate,
 };
 
-// Default chainabel
-import S from "./src/wrap.js";
-export default S;
+export default function S(initial = "") {
+    let value = initial == null ? "" : String(initial);
 
+    const api = Object.create(null);
+
+    // Dynamically create chainable methods
+    Object.keys(METHODS).forEach((name) => {
+        api[name] = function (...args) {
+            const fn = METHODS[name];
+            const result = fn(value, ...args);
+            value = result;
+            return api;
+        };
+    });
+    
+    // getter for the current value
+    api.value = () => value;
+
+    // Nicer console.log() in node.js
+    api.toString = ()  => {
+        return String(value);
+    }
+    api.valueOf = () => {
+        return value;
+    }
+
+    return api;
+}
