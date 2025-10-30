@@ -22,8 +22,6 @@ import pascalCase from "./src/pascalCase.js";
 import truncate from "./src/truncate.js";
 
 // 
-console.log(" hello happy     world  better    ")
-console.log(trimAll(" hello happy     world  better    "));
 
 export {
     capitalizeFirst,
